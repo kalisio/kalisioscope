@@ -4,8 +4,12 @@ node_js:
 before_script:
 - sudo apt-get install imagemagick
 script:
-- mkdir assets
+- bash generate.sh kalisio assets
 - bash generate.sh aktnmap assets
+- bash generate.sh kargo assets
+- bash generate.sh krawler assets
+- bash generate.sh kdk assets
+- bash generate.sh weacast assets
 deploy:
   skip_cleanup: true
   provider: s3
