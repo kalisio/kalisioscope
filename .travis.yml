@@ -9,8 +9,8 @@ script:
 deploy:
   skip_cleanup: true
   provider: s3
-  access_key_id: "$S3_ACCESS_KEY"
-  secret_access_key: "$S3_SECRET_ACCESS_KEY"
+  access_key_id: "$AWS_ACCESS_KEY_ID"
+  secret_access_key: "$AWS_SECRET_ACCESS_KEY"
   bucket: kalisioscope
   local_dir: assets
   upload_dir: ./
