@@ -2,7 +2,17 @@ language: node_js
 node_js:
 - '8'
 before_script:
-- apt-get install imagemagick
+- sudo apt-get install imagemagick
 script:
-- bash generate.sh
+- mkdir assets
+- bash generate aktnmap assets
+deploy:
+  skip_cleanup: true
+  provider: s3
+  access_key_id: "$S3_ACCESS_KEY"
+  secret_access_key: "$S3_SECRET_ACCESS_KEY"
+  bucket: kalisioscope
+  local_dir: assets
+  upload_dir: ./
+    
 
