@@ -5,7 +5,7 @@ before_script:
 - sudo apt-get install imagemagick
 script:
 - mkdir assets
-- bash generate aktnmap assets
+- bash generate.sh aktnmap assets
 deploy:
   skip_cleanup: true
   provider: s3
