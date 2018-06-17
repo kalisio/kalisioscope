@@ -33,8 +33,8 @@ mogrify -resize 64x64 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-white-64x64.png $OUT
 cp $PRODUCT/$PRODUCT-logo-black-2048x672.png $OUTPUT/$PRODUCT/$PRODUCT-logo-black-2048x672.png
 mogrify -resize 1024x336 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-black-1024x336.png $PRODUCT/$PRODUCT-logo-black-2048x672.png
 mogrify -resize 512x168 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-black-512x168.png $PRODUCT/$PRODUCT-logo-black-2048x672.png
-mogrify -resize 256x84 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-black-256x84.png $PRODUCT/$PRODUCT-logo-black-2048x2048.png
-mogrify -resize 128x42 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-black-128x42.png $PRODUCT/$PRODUCT-logo-black-2048x2048.png
+mogrify -resize 256x84 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-black-256x84.png $PRODUCT/$PRODUCT-logo-black-2048x672.png
+mogrify -resize 128x42 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-black-128x42.png $PRODUCT/$PRODUCT-logo-black-2048x672.png
 # Generate banner logos with white text
 convert  $OUTPUT/$PRODUCT/$PRODUCT-logo-black-2048x672.png -fuzz 1% -fill white -opaque black  $OUTPUT/$PRODUCT/$PRODUCT-logo-white-2048x672.png
 mogrify -resize 1024x336 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-white-1024x336.png $OUTPUT/$PRODUCT/$PRODUCT-logo-white-2048x672.png
