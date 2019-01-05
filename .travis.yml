@@ -9,6 +9,7 @@ script:
 - bash generate.sh kargo assets
 - bash generate.sh kano assets
 - bash generate.sh krawler assets
+- bash generate.sh kaabah assets
 - bash generate.sh kdk assets
 - bash generate.sh weacast assets
 deploy:
