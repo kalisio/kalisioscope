@@ -19,13 +19,17 @@ $CONVERT -resize 192x192 $OUTPUT/$PRODUCT/android/icon-192-xxxhdpi.png
 # Screens
 SCREEN_INPUT=$PRODUCT/$PRODUCT-logo-black-2048x2048.png
 CONVERT="convert $SCREEN_INPUT -background $BACKGROUND -gravity center"
-$CONVERT -resize 512x512 -extent 1280x720 $OUTPUT/$PRODUCT/android/screen-xhdpi-landscape.png
+$CONVERT -resize 256x256 -extent 800x480 $OUTPUT/$PRODUCT/android/screen-hdpi-landscape.png
 $CONVERT -resize 128x128 -extent 320x200 $OUTPUT/$PRODUCT/android/screen-ldpi-landscape.png
 $CONVERT -resize 256x256 -extent 480x320 $OUTPUT/$PRODUCT/android/screen-mdpi-landscape.png
-$CONVERT -resize 256x256 -extent 800x480 $OUTPUT/$PRODUCT/android/screen-hdpi-landscape.png
+$CONVERT -resize 512x512 -extent 1280x720 $OUTPUT/$PRODUCT/android/screen-xhdpi-landscape.png
+$CONVERT -resize 512x512 -extent 1600x960 $OUTPUT/$PRODUCT/android/screen-xxhdpi-landscape.png
+$CONVERT -resize 1024x1024 -extent 1920x1280 $OUTPUT/$PRODUCT/android/screen-xxxhdpi-landscape.png
 
 $CONVERT -resize 256x256 -extent 480x800 $OUTPUT/$PRODUCT/android/screen-hdpi-portrait.png
-$CONVERT -resize 512x512 -extent 720x1280 $OUTPUT/$PRODUCT/android/screen-xhdpi-portrait.png
-$CONVERT -resize 256x256 -extent 320x480 $OUTPUT/$PRODUCT/android/screen-mdpi-portrait.png
 $CONVERT -resize 128x128 -extent 200x320 $OUTPUT/$PRODUCT/android/screen-ldpi-portrait.png
+$CONVERT -resize 256x256 -extent 320x480 $OUTPUT/$PRODUCT/android/screen-mdpi-portrait.png
+$CONVERT -resize 512x512 -extent 720x1280 $OUTPUT/$PRODUCT/android/screen-xhdpi-portrait.png
+$CONVERT -resize 512x512 -extent 960x1600 $OUTPUT/$PRODUCT/android/screen-xxhdpi-portrait.png
+$CONVERT -resize 1024x1024 -extent 1280x1920 $OUTPUT/$PRODUCT/android/screen-xxxhdpi-portrait.png
 
