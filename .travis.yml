@@ -5,17 +5,17 @@ before_script:
 - sudo apt-get install imagemagick
 script:
 - bash generate.sh kalisio assets
-- bash generate.sh aktnmap assets
 - bash generate.sh kargo assets
 - bash generate.sh kano assets
 - bash generate.sh krawler assets
 - bash generate.sh kaabah assets
-- bash generate.sh kdk assets
 - bash generate.sh weacast assets
-- bash generate-android.sh kdk res
-- bash generate-ios.sh kdk res
-- bash generate-android.sh aktnmap res
-- bash generate-ios.sh aktnmap res
+- bash generate.sh kdk assets
+- bash generate-android.sh kdk res none
+- bash generate-ios.sh kdk res white
+- bash generate.sh aktnmap assets
+- bash generate-android.sh aktnmap res none
+- bash generate-ios.sh aktnmap res white
 deploy:
   skip_cleanup: true
   provider: s3
