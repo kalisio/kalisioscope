@@ -11,11 +11,11 @@ script:
 - bash generate.sh kaabah assets
 - bash generate.sh weacast assets
 - bash generate.sh kdk assets
-- bash generate-android.sh kdk res none
-- bash generate-ios.sh kdk res white
+- bash generate-android.sh kdk assets none
+- bash generate-ios.sh kdk assets white
 - bash generate.sh aktnmap assets
-- bash generate-android.sh aktnmap res none
-- bash generate-ios.sh aktnmap res white
+- bash generate-android.sh aktnmap assets none
+- bash generate-ios.sh aktnmap assets white
 deploy:
   skip_cleanup: true
   provider: s3
