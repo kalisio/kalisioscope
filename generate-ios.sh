@@ -8,7 +8,7 @@ mkdir -p $OUTPUT/$PRODUCT/ios
 
 # Icons
 ICON_INPUT=$PRODUCT/$PRODUCT-icon-2048x2048.png
-CONVERT="convert $ICON_INPUT -background $BACKGROUND -alpha off"
+CONVERT="convert $ICON_INPUT -background $BACKGROUND alpha remove -alpha off"
 $CONVERT -resize 20x20 $OUTPUT/$PRODUCT/ios/icon-20.png
 $CONVERT -resize 40x40 $OUTPUT/$PRODUCT/ios/icon-20@2x.png
 $CONVERT -resize 60x60 $OUTPUT/$PRODUCT/ios/icon-20@3x.png
