@@ -30,7 +30,7 @@ $CONVERT -resize 167x167 $OUTPUT/$PRODUCT/ios/icons/icon-83.5-2x.png
 # Screens
 mkdir -p $OUTPUT/$PRODUCT/ios/screens
 SCREEN_INPUT=$PRODUCT/$PRODUCT-logo-black-2048x2048.png
-CONVERT="convert $SCREEN_INPUT -background $BACKGROUND -gravity center"
+CONVERT="convert $SCREEN_INPUT -background $BACKGROUND -alpha remove -alpha off -gravity center"
 $CONVERT -resize 512x512 -extent 640x1136 $OUTPUT/$PRODUCT/ios/screens/screen-iphone-568h-2x.png
 $CONVERT -resize 256x256 -extent 320x480 $OUTPUT/$PRODUCT/ios/screens/screen-iphone-portrait.png
 $CONVERT -resize 256x256 -extent 640x960 $OUTPUT/$PRODUCT/ios/screens/screen-iphone-portrait-2x.png
