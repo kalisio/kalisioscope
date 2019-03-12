@@ -41,5 +41,14 @@ $CONVERT -resize 512x512 -extent 768x1004 $OUTPUT/$PRODUCT/ios/screens/screen-ip
 $CONVERT -resize 1024x1024 -extent 1536x2048 $OUTPUT/$PRODUCT/ios/screens/screen-ipad-portrait-2x.png
 $CONVERT -resize 512x512 -extent 1024x768 $OUTPUT/$PRODUCT/ios/screens/screen-ipad-landscape.png
 $CONVERT -resize 1024x1024 -extent 2048x1536 $OUTPUT/$PRODUCT/ios/screens/screen-ipad-landscape-2x.png
-$CONVERT -resize 2048x2048 -extent 2737x2048 $OUTPUT/$PRODUCT/ios/screens/screen-ipad-landscape-ipadpro.png
-$CONVERT -resize 2048x2048 -extent 2048x2732 $OUTPUT/$PRODUCT/ios/screens/screen-ipad-portrait-ipadpro.png
+$CONVERT -extent 2737x2048 $OUTPUT/$PRODUCT/ios/screens/screen-ipad-landscape-ipadpro.png
+$CONVERT -extent 2048x2732 $OUTPUT/$PRODUCT/ios/screens/screen-ipad-portrait-ipadpro.png
+
+# Store
+mkdir -p $OUTPUT/$PRODUCT/ios/store
+STORE_INPUT=$PRODUCT/$PRODUCT-logo-black-2048x2048.png
+CONVERT="convert $STORE_INPUT -background $BACKGROUND -alpha remove -alpha off -gravity center"
+$CONVERT -resize 1024x1024 -extent 1242x2048 $OUTPUT/$PRODUCT/ios/store/iphone-portrait.png
+$CONVERT -resize 1024x1024 -extent 2048x1024 $OUTPUT/$PRODUCT/ios/store/iphone-landscape.png
+$CONVERT -extent 2048x2732 $OUTPUT/$PRODUCT/ios/store/ipad-portrait.png
+$CONVERT -extent 2737x2048 $OUTPUT/$PRODUCT/ios/store/ipad-landscape.png
