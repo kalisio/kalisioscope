@@ -35,8 +35,9 @@ $CONVERT -resize 1024x1024 -extent 1280x1920 $OUTPUT/$PRODUCT/android/screens/sc
 
 # Store
 mkdir -p $OUTPUT/$PRODUCT/android/store
-STORE_INPUT=$PRODUCT/$PRODUCT-logo-black-2048x2048.png
-CONVERT="convert $STORE_INPUT -background none"
+ICON_INPUT=$PRODUCT/$PRODUCT-icon-2048x2048.png
+CONVERT="convert $ICON_INPUT -background none"
 $CONVERT -resize 512x512 $OUTPUT/$PRODUCT/android/store/icon.png
-CONVERT="convert $STORE_INPUT -background $BACKGROUND -gravity center"
+LOGO_INPUT=$PRODUCT/$PRODUCT-logo-black-2048x2048.png
+CONVERT="convert $LOGO_INPUT -background $BACKGROUND -gravity center"
 $CONVERT -resize 500x500 -extent 1024x500 $OUTPUT/$PRODUCT/android/store/image.png

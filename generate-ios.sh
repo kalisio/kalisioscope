@@ -46,8 +46,8 @@ $CONVERT -extent 2048x2732 $OUTPUT/$PRODUCT/ios/screens/screen-ipad-portrait-ipa
 
 # Store
 mkdir -p $OUTPUT/$PRODUCT/ios/store
-STORE_INPUT=$PRODUCT/$PRODUCT-logo-black-2048x2048.png
-CONVERT="convert $STORE_INPUT -background $BACKGROUND -alpha remove -alpha off -gravity center"
+LOGO_INPUT=$PRODUCT/$PRODUCT-logo-black-2048x2048.png
+CONVERT="convert $LOGO_INPUT -background $BACKGROUND -alpha remove -alpha off -gravity center"
 $CONVERT -resize 1024x1024 -extent 1242x2048 $OUTPUT/$PRODUCT/ios/store/iphone-portrait.png
 $CONVERT -resize 1024x1024 -extent 2048x1024 $OUTPUT/$PRODUCT/ios/store/iphone-landscape.png
 $CONVERT -extent 2048x2732 $OUTPUT/$PRODUCT/ios/store/ipad-portrait.png
