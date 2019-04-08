@@ -13,7 +13,8 @@ mogrify -resize 256x256 -write $OUTPUT/$PRODUCT/$PRODUCT-icon-256x256.png $PRODU
 mogrify -resize 192x192 -write $OUTPUT/$PRODUCT/$PRODUCT-icon-192x192.png $PRODUCT/$PRODUCT-icon-2048x2048.png
 mogrify -resize 128x128 -write $OUTPUT/$PRODUCT/$PRODUCT-icon-128x128.png $PRODUCT/$PRODUCT-icon-2048x2048.png
 mogrify -resize 64x64 -write $OUTPUT/$PRODUCT/$PRODUCT-icon-64x64.png $PRODUCT/$PRODUCT-icon-2048x2048.png
-mogrify -resize 32x32 -write $OUTPUT/$PRODUCT/$PRODUCT-icon-32x32.png $PRODUCT/$PRODUCT-icon-2048x2048.png
+cp $PRODUCT/$PRODUCT-icon-32x32.png $OUTPUT/$PRODUCT/$PRODUCT-icon-32x32.png
+mogrify -resize 24x24 -write $OUTPUT/$PRODUCT/$PRODUCT-icon-24x24.png $PRODUCT/$PRODUCT-icon-32x32.png
 
 # Generate square logos with black text
 cp $PRODUCT/$PRODUCT-logo-black-2048x2048.png $OUTPUT/$PRODUCT/$PRODUCT-logo-black-2048x2048.png
