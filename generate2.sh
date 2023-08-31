@@ -16,7 +16,7 @@ mogrify -resize 64x64 -write $OUTPUT/$PRODUCT/$PRODUCT-icon-color-64x64.png $PRO
 
 # Generate square logos 
 cp $PRODUCT/$PRODUCT-logo-color-2048x2048.png $OUTPUT/$PRODUCT/$PRODUCT-logo-color-2048x2048.png
-mogrify -resize 1024x1024 -write $OUTPUT/$PRODUCT/$PRODUCT-logoc-olor-1024x1024.png $PRODUCT/$PRODUCT-logo-color-2048x2048.png
+mogrify -resize 1024x1024 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-olor-1024x1024.png $PRODUCT/$PRODUCT-logo-color-2048x2048.png
 mogrify -resize 512x512 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-512x512.png $PRODUCT/$PRODUCT-logo-color-2048x2048.png
 mogrify -resize 256x256 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-256x256.png $PRODUCT/$PRODUCT-logo-color-2048x2048.png
 mogrify -resize 192x192 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-192x192.png $PRODUCT/$PRODUCT-logo-color-2048x2048.png
@@ -25,7 +25,7 @@ mogrify -resize 64x64 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-64x64.png $PRO
 
 # Generate banner logos 
 cp $PRODUCT/$PRODUCT-logo-color-2048x1024.png $OUTPUT/$PRODUCT/$PRODUCT-logo-color-2048x1024.png
-mogrify -resize 1024x1024 -write $OUTPUT/$PRODUCT/$PRODUCT-logoc-olor-1024x512.png $PRODUCT/$PRODUCT-logo-color-2048x1024.png
+mogrify -resize 1024x1024 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-olor-1024x512.png $PRODUCT/$PRODUCT-logo-color-2048x1024.png
 mogrify -resize 512x512 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-512x256.png $PRODUCT/$PRODUCT-logo-color-2048x1024.png
 mogrify -resize 256x256 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-384x192.png $PRODUCT/$PRODUCT-logo-color-2048x1024.png
 mogrify -resize 192x192 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-256x128.png $PRODUCT/$PRODUCT-logo-color-2048x1024.png
