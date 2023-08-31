@@ -12,11 +12,7 @@ script:
 - bash generate.sh weacast assets
 - bash generate.sh kdk assets
 - bash generate.sh kapp assets
-- bash generate-android.sh kapp assets none
-- bash generate-ios.sh kapp assets white
-- bash generate.sh aktnmap assets
-- bash generate-android.sh aktnmap assets none
-- bash generate-ios.sh aktnmap assets white
+- bash generate2.sh crisis assets
 deploy:
   skip_cleanup: true
   provider: s3
