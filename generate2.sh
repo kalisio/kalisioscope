@@ -27,6 +27,6 @@ mogrify -resize 64x64 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-64x64.png $PRO
 cp $PRODUCT/$PRODUCT-logo-color-2048x1024.png $OUTPUT/$PRODUCT/$PRODUCT-logo-color-2048x1024.png
 mogrify -resize 1024x1024 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-olor-1024x512.png $PRODUCT/$PRODUCT-logo-color-2048x1024.png
 mogrify -resize 512x512 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-512x256.png $PRODUCT/$PRODUCT-logo-color-2048x1024.png
-mogrify -resize 256x256 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-384x192.png $PRODUCT/$PRODUCT-logo-color-2048x1024.png
-mogrify -resize 192x192 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-256x128.png $PRODUCT/$PRODUCT-logo-color-2048x1024.png
-mogrify -resize 128x128 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-128x64.png $PRODUCT/$PRODUCT-logo-color-2048x1024.png
+mogrify -resize 384x192 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-384x192.png $PRODUCT/$PRODUCT-logo-color-2048x1024.png
+mogrify -resize 256x128 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-256x128.png $PRODUCT/$PRODUCT-logo-color-2048x1024.png
+mogrify -resize 128x64 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-128x64.png $PRODUCT/$PRODUCT-logo-color-2048x1024.png
