@@ -12,6 +12,7 @@ script:
 - bash generate.sh weacast assets
 - bash generate.sh kdk assets
 - bash generate.sh kapp assets
+- bash generate2.sh teams assets
 - bash generate2.sh crisis assets
 deploy:
   skip_cleanup: true
