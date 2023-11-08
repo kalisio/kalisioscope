@@ -7,13 +7,19 @@ script:
 - bash generate.sh kalisio assets
 - bash generate.sh kargo assets
 - bash generate.sh kano assets
-- bash generate.sh krawler assets
 - bash generate.sh kaabah assets
-- bash generate.sh weacast assets
-- bash generate.sh kdk assets
-- bash generate.sh kapp assets
-- bash generate2.sh teams assets
 - bash generate2.sh crisis assets
+- bash generate2.sh field assets
+- bash generate2.sh kapp assets
+- bash generate2.sh kdk assets
+- bash generate2.sh krawler assets
+- bash generate2.sh maps assets
+- bash generate2.sh planet assets
+- bash generate2.sh skeleton assets
+- bash generate2.sh planet assets
+- bash generate2.sh teams assets
+- bash generate2.sh watch assets
+- bash generate2.sh weacast assets
 deploy:
   skip_cleanup: true
   provider: s3
