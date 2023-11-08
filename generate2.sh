@@ -30,6 +30,6 @@ convert -crop 2048x768+0+128 $PRODUCT/$PRODUCT-logo-color-2048x1024.png $PRODUCT
 cp $PRODUCT/$PRODUCT-logo-color-2048x768.png $OUTPUT/$PRODUCT/$PRODUCT-logo-color-2048x768.png
 mogrify -resize 1024x384 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-1024x384.png $PRODUCT/$PRODUCT-logo-color-2048x768.png
 mogrify -resize 512x192 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-512x192.png $PRODUCT/$PRODUCT-logo-color-2048x768.png
-mogrify -resize 256x96 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-256x92.png $PRODUCT/$PRODUCT-logo-color-2048x768.png
+mogrify -resize 256x96 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-256x96.png $PRODUCT/$PRODUCT-logo-color-2048x768.png
 mogrify -resize 192x64 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-192x64.png $PRODUCT/$PRODUCT-logo-color-2048x768.png
 mogrify -resize 128x48 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-128x48.png $PRODUCT/$PRODUCT-logo-color-2048x768.png
