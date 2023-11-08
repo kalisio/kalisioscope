@@ -26,7 +26,7 @@ mogrify -resize 128x128 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-128x128.png 
 mogrify -resize 64x64 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-64x64.png $PRODUCT/$PRODUCT-logo-color-2048x2048.png
 
 # Generate banner logos 
-convert -crop 2048x512+0+128 $PRODUCT/$PRODUCT-logo-color-2048x1024.png $PRODUCT/$PRODUCT-logo-color-2048x768.png
+convert -crop 2048x768+0+128 $PRODUCT/$PRODUCT-logo-color-2048x1024.png $PRODUCT/$PRODUCT-logo-color-2048x768.png
 cp $PRODUCT/$PRODUCT-logo-color-2048x768.png $OUTPUT/$PRODUCT/$PRODUCT-logo-color-2048x768.png
 mogrify -resize 1024x384 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-1024x384.png $PRODUCT/$PRODUCT-logo-color-2048x768.png
 mogrify -resize 512x192 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-color-512x192.png $PRODUCT/$PRODUCT-logo-color-2048x768.png
