@@ -32,6 +32,7 @@ for STYLE in black color white grey; do
   cp $PRODUCT/$PRODUCT-logo-$STYLE-2048x768.png $OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-2048x768.png
   mogrify -resize 1024x384 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-1024x384.png $PRODUCT/$PRODUCT-logo-$STYLE-2048x768.png
   mogrify -resize 512x192 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-512x192.png $PRODUCT/$PRODUCT-logo-$STYLE-2048x768.png
+  mogrify -resize 384x144 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-384x144.png $PRODUCT/$PRODUCT-logo-$STYLE-2048x768.png
   mogrify -resize 256x96 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-256x96.png $PRODUCT/$PRODUCT-logo-$STYLE-2048x768.png
   mogrify -resize 192x64 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-192x64.png $PRODUCT/$PRODUCT-logo-$STYLE-2048x768.png
   mogrify -resize 128x48 -write $OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-128x48.png $PRODUCT/$PRODUCT-logo-$STYLE-2048x768.png
