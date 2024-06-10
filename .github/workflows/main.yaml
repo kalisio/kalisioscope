@@ -8,7 +8,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
       - name: Generate icons
-        run: >
+        run: |
           for i in kaabah kano kalisio kargo; do
             bash ./generate.sh "$i" assets
           done
