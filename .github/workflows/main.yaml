@@ -8,11 +8,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
       - name: Generate icons
-        run: |
-          for i in kaabah kano kalisio kargo; do
-            bash ./generate.sh "$i" assets
-          done
-          for i in crisis field kapp kdk krawler maps planet skeleton teams watch weacast; do
-            bash ./generate2.sh "$i" assets
-          done
-          rclone version
+        env:
+          RCLONE_CONFIG_STORE_ACCESS_KEY_ID: ${{ secrets.RCLONE_CONFIG_STORE_ACCESS_KEY_ID }}
+          RCLONE_CONFIG_STORE_SECRET_ACCESS_KEY: ${{ secrets.RCLONE_CONFIG_STORE_SECRET_ACCESS_KEY }}
+        run: bash ./generate-all.sh
