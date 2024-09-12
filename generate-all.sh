@@ -29,6 +29,7 @@ SVG_URLS=(
     "https://www.rte-france.com/themes/swi/images/components/header/logo-rte.svg"
     "https://www.vigicrues.gouv.fr/assets/images/vigicrues.svg"
     "https://vigilance.meteofrance.fr/themes/custom/theme_vigilance/dist/img/logo.svg"
+    "https://upload.wikimedia.org/wikipedia/commons/a/a0/IGN_logo_2012.svg"
 )
 SVG_NAMES=(
     "noaa"
@@ -36,6 +37,7 @@ SVG_NAMES=(
     "rte"
     "vigicrues"
     "meteofrance"
+    "ign"
 )
 
 # Download svg, then convert to png
