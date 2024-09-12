@@ -2,6 +2,9 @@
 set -euo pipefail
 # set -x
 
+## Generate kalisio icons
+##
+
 for i in kaabah kano kalisio kargo; do
     ./generate.sh "$i" assets
 done
@@ -9,6 +12,58 @@ done
 for i in crisis field kapp kdk krawler maps planet skeleton teams watch weacast; do
     ./generate2.sh "$i" assets
 done
+
+## Other assets
+##
+
+THIS_FILE=$(readlink -f "${BASH_SOURCE[0]}")
+THIS_DIR=$(dirname "$THIS_FILE")
+TMP_DIR=$(mktemp -d -p "${XDG_RUNTIME_DIR:-}" kalisio.XXXXXX)
+OUT_DIR="$THIS_DIR/assets/others"
+
+mkdir -p "$OUT_DIR"
+
+SVG_URLS=(
+    "https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg"
+    "https://hubeau.eaufrance.fr/themes/custom/hubeau/images/logos/logo-hubeau-blue.svg"
+    "https://www.rte-france.com/themes/swi/images/components/header/logo-rte.svg"
+)
+SVG_NAMES=(
+    "noaa"
+    "hubeau"
+    "rte"
+)
+
+# Download svg, then convert to png
+for (( i=0; i<${#SVG_URLS[@]}; i++ )); do
+    SVG_IN="$TMP_DIR/${SVG_NAMES[$i]}.svg"
+    PNG_OUT="$OUT_DIR/${SVG_NAMES[$i]}.png"
+    wget --no-check-certificate -O "$SVG_IN" "${SVG_URLS[$i]}"
+    convert -background none -density 1024 -resize 1024x "$SVG_IN" "$PNG_OUT"
+done
+
+PNG_URLS=(
+    "https://meteofrance.com/sites/meteofrance.com/files/logo/LOGO_MF.png"
+    "https://raw.githubusercontent.com/openradiation/openradiation-mobile/master/resources/icon.png"
+)
+PNG_NAMES=(
+    "meteofrance"
+    "openradiation"
+)
+
+# Just download png
+for (( i=0; i<${#PNG_URLS[@]}; i++ )); do
+    PNG_IN="$TMP_DIR/${PNG_NAMES[$i]}.png"
+    PNG_OUT="$OUT_DIR/${PNG_NAMES[$i]}.png"
+    wget --no-check-certificate -O "$PNG_IN" "${PNG_URLS[$i]}"
+    # convert -background none -density 1024 -resize 1024x "$SVG_IN" "$PNG_OUT"
+    cp "$PNG_IN" "$PNG_OUT"
+done
+
+rm -fR "$TMP_DIR"
+
+## Upload to public bucket
+##
 
 # Use rclone to copy on remote location
 sudo apt-get --no-install-recommends --yes install rclone
