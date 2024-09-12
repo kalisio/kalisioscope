@@ -30,6 +30,7 @@ SVG_URLS=(
     "https://www.vigicrues.gouv.fr/assets/images/vigicrues.svg"
     "https://vigilance.meteofrance.fr/themes/custom/theme_vigilance/dist/img/logo.svg"
     "https://upload.wikimedia.org/wikipedia/commons/a/a0/IGN_logo_2012.svg"
+    "https://upload.wikimedia.org/wikipedia/commons/c/c6/MapServer_logo.svg"
 )
 SVG_NAMES=(
     "noaa"
@@ -38,6 +39,7 @@ SVG_NAMES=(
     "vigicrues"
     "meteofrance"
     "ign"
+    "mapserver"
 )
 
 # Download svg, then convert to png
@@ -51,10 +53,12 @@ done
 PNG_URLS=(
     "https://raw.githubusercontent.com/openradiation/openradiation-mobile/master/resources/icon.png"
     "http://teleray.irsn.fr/theme/images/bandeau_Title.png"
+    "http://tileserver.org/images/logo.png"
 )
 PNG_NAMES=(
     "openradiation"
     "teleray"
+    "tileservergl"
 )
 
 # Just download png
