@@ -27,11 +27,15 @@ SVG_URLS=(
     "https://upload.wikimedia.org/wikipedia/commons/7/79/NOAA_logo.svg"
     "https://hubeau.eaufrance.fr/themes/custom/hubeau/images/logos/logo-hubeau-blue.svg"
     "https://www.rte-france.com/themes/swi/images/components/header/logo-rte.svg"
+    "https://www.vigicrues.gouv.fr/assets/images/vigicrues.svg"
+    "https://vigilance.meteofrance.fr/themes/custom/theme_vigilance/dist/img/logo.svg"
 )
 SVG_NAMES=(
     "noaa"
     "hubeau"
     "rte"
+    "vigicrues"
+    "meteofrance"
 )
 
 # Download svg, then convert to png
@@ -43,12 +47,12 @@ for (( i=0; i<${#SVG_URLS[@]}; i++ )); do
 done
 
 PNG_URLS=(
-    "https://meteofrance.com/sites/meteofrance.com/files/logo/LOGO_MF.png"
     "https://raw.githubusercontent.com/openradiation/openradiation-mobile/master/resources/icon.png"
+    "http://teleray.irsn.fr/theme/images/bandeau_Title.png"
 )
 PNG_NAMES=(
-    "meteofrance"
     "openradiation"
+    "teleray"
 )
 
 # Just download png
