@@ -31,6 +31,8 @@ SVG_URLS=(
     "https://vigilance.meteofrance.fr/themes/custom/theme_vigilance/dist/img/logo.svg"
     "https://upload.wikimedia.org/wikipedia/commons/a/a0/IGN_logo_2012.svg"
     "https://upload.wikimedia.org/wikipedia/commons/c/c6/MapServer_logo.svg"
+    "https://qgis.org/img/logosign.svg"
+    "https://upload.wikimedia.org/wikipedia/commons/d/df/ArcGIS_logo.png"
 )
 SVG_NAMES=(
     "noaa"
@@ -40,6 +42,8 @@ SVG_NAMES=(
     "meteofrance"
     "ign"
     "mapserver"
+    "qgis"
+    "arcgis"
 )
 
 # Download svg, then convert to png
