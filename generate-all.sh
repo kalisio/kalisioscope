@@ -54,11 +54,13 @@ PNG_URLS=(
     "https://raw.githubusercontent.com/openradiation/openradiation-mobile/master/resources/icon.png"
     "http://teleray.irsn.fr/theme/images/bandeau_Title.png"
     "http://tileserver.org/images/logo.png"
+    "https://www.unidata.ucar.edu/images/logos/thredds_tds-400x400.png"
 )
 PNG_NAMES=(
     "openradiation"
     "teleray"
     "tileservergl"
+    "thredds"
 )
 
 # Just download png
