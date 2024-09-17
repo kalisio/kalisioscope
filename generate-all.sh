@@ -35,6 +35,7 @@ SVG_URLS=(
     "https://upload.wikimedia.org/wikipedia/commons/2/26/Logo-OVH.svg"
     "https://upload.wikimedia.org/wikipedia/fr/a/a3/ScalewayLogo.svg"
     "https://upload.wikimedia.org/wikipedia/fr/1/1e/Logo_BRGM.svg"
+    "https://wiki.postgresql.org/images/a/a4/PostgreSQL_logo.3colors.svg"
 )
 SVG_NAMES=(
     "noaa"
@@ -48,6 +49,7 @@ SVG_NAMES=(
     "ovh"
     "scaleway"
     "brgm"
+    "postgresql"
 )
 
 # Download svg, then convert to png
@@ -64,6 +66,7 @@ PNG_URLS=(
     "http://tileserver.org/images/logo.png"
     "https://www.unidata.ucar.edu/images/logos/thredds_tds-400x400.png"
     "https://upload.wikimedia.org/wikipedia/commons/d/df/ArcGIS_logo.png"
+    "https://upload.wikimedia.org/wikipedia/commons/7/7b/Logo_square_postgis.png"
 )
 PNG_NAMES=(
     "openradiation"
@@ -71,6 +74,7 @@ PNG_NAMES=(
     "tileservergl"
     "thredds"
     "arcgis"
+    "postgis"
 )
 
 # Just download png
