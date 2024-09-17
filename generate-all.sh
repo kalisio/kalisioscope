@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
-# set -x
+set -x
 
 ## Generate kalisio icons
 ##
