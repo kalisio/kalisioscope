@@ -57,7 +57,7 @@ for (( i=0; i<${#SVG_URLS[@]}; i++ )); do
     SVG_IN="$TMP_DIR/${SVG_NAMES[$i]}.svg"
     PNG_OUT="$OUT_DIR/${SVG_NAMES[$i]}.png"
     wget --no-check-certificate -O "$SVG_IN" "${SVG_URLS[$i]}"
-    convert -background none -density 1024 -resize 1024x "$SVG_IN" "$PNG_OUT"
+    convert -strip -background none -density 1024 -resize 1024x "$SVG_IN" "$PNG_OUT"
 done
 
 PNG_URLS=(
