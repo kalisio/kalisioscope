@@ -33,6 +33,8 @@ SVG_URLS=(
     "https://upload.wikimedia.org/wikipedia/commons/c/c6/MapServer_logo.svg"
     "https://qgis.org/img/logosign.svg"
     "https://upload.wikimedia.org/wikipedia/commons/d/df/ArcGIS_logo.png"
+    "https://upload.wikimedia.org/wikipedia/commons/2/26/Logo-OVH.svg"
+    "https://upload.wikimedia.org/wikipedia/fr/a/a3/ScalewayLogo.svg"
 )
 SVG_NAMES=(
     "noaa"
@@ -44,6 +46,8 @@ SVG_NAMES=(
     "mapserver"
     "qgis"
     "arcgis"
+    "ovh"
+    "scaleway"
 )
 
 # Download svg, then convert to png
