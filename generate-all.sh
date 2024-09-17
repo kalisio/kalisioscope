@@ -32,9 +32,9 @@ SVG_URLS=(
     "https://upload.wikimedia.org/wikipedia/commons/a/a0/IGN_logo_2012.svg"
     "https://upload.wikimedia.org/wikipedia/commons/c/c6/MapServer_logo.svg"
     "https://qgis.org/img/logosign.svg"
-    "https://upload.wikimedia.org/wikipedia/commons/d/df/ArcGIS_logo.png"
     "https://upload.wikimedia.org/wikipedia/commons/2/26/Logo-OVH.svg"
     "https://upload.wikimedia.org/wikipedia/fr/a/a3/ScalewayLogo.svg"
+    "https://upload.wikimedia.org/wikipedia/fr/1/1e/Logo_BRGM.svg"
 )
 SVG_NAMES=(
     "noaa"
@@ -45,9 +45,9 @@ SVG_NAMES=(
     "ign"
     "mapserver"
     "qgis"
-    "arcgis"
     "ovh"
     "scaleway"
+    "brgm"
 )
 
 # Download svg, then convert to png
@@ -63,12 +63,14 @@ PNG_URLS=(
     "http://teleray.irsn.fr/theme/images/bandeau_Title.png"
     "http://tileserver.org/images/logo.png"
     "https://www.unidata.ucar.edu/images/logos/thredds_tds-400x400.png"
+    "https://upload.wikimedia.org/wikipedia/commons/d/df/ArcGIS_logo.png"
 )
 PNG_NAMES=(
     "openradiation"
     "teleray"
     "tileservergl"
     "thredds"
+    "arcgis"
 )
 
 # Just download png
