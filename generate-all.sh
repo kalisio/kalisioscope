@@ -62,7 +62,7 @@ done
 
 PNG_URLS=(
     "https://raw.githubusercontent.com/openradiation/openradiation-mobile/master/resources/icon.png"
-    "http://teleray.irsn.fr/theme/images/bandeau_Title.png"
+    "https://teleray.asnr.fr/teleray-icon-512x512.png"
     "http://tileserver.org/images/logo.png"
     "https://www.unidata.ucar.edu/images/logos/thredds_tds-400x400.png"
     "https://upload.wikimedia.org/wikipedia/commons/d/df/ArcGIS_logo.png"
