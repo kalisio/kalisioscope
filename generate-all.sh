@@ -9,7 +9,7 @@ for i in kaabah kano kalisio kargo; do
     ./generate.sh "$i" assets
 done
 
-for i in crisis field kapp kdk krawler maps planet skeleton teams watch weacast; do
+for i in crisis field kapp kdk krawler maps planet skeleton teams print watch weacast; do
     ./generate2.sh "$i" assets
 done
 
