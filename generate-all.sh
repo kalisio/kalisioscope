@@ -60,32 +60,6 @@ for (( i=0; i<${#SVG_URLS[@]}; i++ )); do
     convert -strip -background none -density 1024 -resize 1024x "$SVG_IN" "$PNG_OUT"
 done
 
-PNG_URLS=(
-    "https://raw.githubusercontent.com/openradiation/openradiation-mobile/master/resources/icon.png"
-    "https://teleray.asnr.fr/teleray-icon-512x512.png"
-    "http://tileserver.org/images/logo.png"
-    "https://www.unidata.ucar.edu/images/logos/thredds_tds-400x400.png"
-    "https://upload.wikimedia.org/wikipedia/commons/d/df/ArcGIS_logo.png"
-    "https://upload.wikimedia.org/wikipedia/commons/7/7b/Logo_square_postgis.png"
-)
-PNG_NAMES=(
-    "openradiation"
-    "teleray"
-    "tileservergl"
-    "thredds"
-    "arcgis"
-    "postgis"
-)
-
-# Just download png
-for (( i=0; i<${#PNG_URLS[@]}; i++ )); do
-    PNG_IN="$TMP_DIR/${PNG_NAMES[$i]}.png"
-    PNG_OUT="$OUT_DIR/${PNG_NAMES[$i]}.png"
-    wget --no-check-certificate -O "$PNG_IN" "${PNG_URLS[$i]}"
-    # convert -background none -density 1024 -resize 1024x "$SVG_IN" "$PNG_OUT"
-    cp "$PNG_IN" "$PNG_OUT"
-done
-
 rm -fR "$TMP_DIR"
 
 ## Upload to public bucket
