@@ -16,7 +16,7 @@ STYLE=color
     convert "$OUTPUT/$PRODUCT/$PRODUCT-icon-$STYLE-2048x2048.png" -strip -resize "$SIZE" "$OUTPUT/$PRODUCT/$PRODUCT-icon-$STYLE-$SIZE.png"
   done
 
-  # Generate square logos
+  # Generate square logos 
   cp "$PRODUCT/$PRODUCT-logo-$STYLE-2048x2048.png" "$OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-2048x2048.png"
   for SIZE in 1024x1024 512x512 384x384 256x256 192x192 128x128 64x64; do
     convert "$OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-2048x2048.png" -strip -resize "$SIZE" "$OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-$SIZE.png"
