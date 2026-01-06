@@ -23,7 +23,7 @@ STYLE=color
   done
 
   # Generate banner logos
-  convert "$PRODUCT/$PRODUCT-logo-$STYLE-2048x1024.png" -strip -crop 2048x768+0+128 "$OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-2048x768.png"
+  convert "assets/$PRODUCT/$PRODUCT-logo-$STYLE-2048x1024.png" -strip -crop 2048x768+0+128 "$OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-2048x768.png"
   for SIZE in 1024x384 512x192 384x144 256x96 192x64 128x48; do
     convert "$OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-2048x768.png" -strip -resize "$SIZE" "$OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-$SIZE.png"
   done
