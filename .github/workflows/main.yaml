@@ -13,12 +13,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate assets
-        run: bash ./generate-all.sh
+        run: bash ./scripts/generate-all.sh
 
       - name: Deploy assets to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: assets
+          publish_dir: output
           destination_dir: .
