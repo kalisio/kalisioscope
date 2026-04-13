@@ -16,7 +16,7 @@ for STYLE in dark light; do
   done
 
   # Generate logos
-  convert -background "assets/$PRODUCT/$PRODUCT-logo-$STYLE-2048x768.svg" "$OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-2048x768.png"
+  convert -background none "assets/$PRODUCT/$PRODUCT-logo-$STYLE-2048x768.svg" "$OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-2048x768.png"
   for SIZE in 1024x384 512x192 384x144 256x96 192x72 128x48 96x32 64x24; do
     convert "$OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-2048x768.png" -strip -resize "$SIZE" "$OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-$SIZE.png"
   done
