@@ -7,3 +7,7 @@ done
 for i in crisis field kapp kdk krawler maps planet skeleton teams watch weacast; do
     ./scripts/generate2.sh "$i" output
 done
+
+for i in kalisio; do
+    ./scripts/generate3.sh "$i" output
+done
