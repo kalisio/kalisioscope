@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-for i in kaabah kano kalisio kargo; do
+for i in kaabah kano kargo; do
     ./scripts/generate.sh "$i" output
 done
 
