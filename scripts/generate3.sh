@@ -44,7 +44,7 @@ for STYLE in light dark; do
   [[ -f "$PRODUCT_DIR/$PRODUCT-logo-vert-mono-$STYLE.svg" ]] && LOGO_VARIANTS+=("$PRODUCT-logo-vert-mono")
 
   # Generate logos
-  convert -background none -density 300 "assets/$PRODUCT/$PRODUCT-logo-$STYLE.svg" -resize x2048 "$OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-x2048.png"
+  convert -background none -density 300 "$PRODUCT_DIR/$PRODUCT-logo-$STYLE.svg" -resize x2048 "$OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-x2048.png"
   for SIZE in x1024 x768 x512 x384 x256 x192 x128 x96 x64 x32; do
      convert "$OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-x2048.png" -strip -resize "$SIZE" "$OUTPUT/$PRODUCT/$PRODUCT-logo-$STYLE-$SIZE.png"
   done
